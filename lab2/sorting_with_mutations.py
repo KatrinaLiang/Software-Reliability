@@ -1,10 +1,10 @@
-def merge_sort(arr):
-    if len(arr) > 1:
+def merge_sort_with_mutation(arr):
+    if len(arr) < 1:  # changed > to <
         mid = len(arr) // 2
         l_arr = arr[:mid]
         r_arr = arr[mid:]
-        merge_sort(l_arr)
-        merge_sort(r_arr)
+        merge_sort_with_mutation(l_arr)
+        merge_sort_with_mutation(r_arr)
 
         i = j = k = 0
 
@@ -33,4 +33,4 @@ def merge_sort(arr):
 if __name__ == '__main__':
     arr = [3, 2, 1, 234, 675, 3, 9, 3, 0, 4, 567, 23]
     print("Sorted array is: ")
-    print(merge_sort(arr))
+    print(merge_sort_with_mutation(arr))
