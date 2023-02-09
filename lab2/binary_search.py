@@ -1,4 +1,4 @@
-def search(arr, key):
+def binary_search(arr, key):
     # return the position of the key, or -1 if not found
 
     l = 0
@@ -21,4 +21,4 @@ def search(arr, key):
 
 if __name__ == '__main__':
     arr = [1, 2, 3, 4, 5, 6, 7]
-    print(search(arr, 5))
+    print(binary_search(arr, 5))

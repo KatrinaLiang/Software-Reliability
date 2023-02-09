@@ -1,10 +1,10 @@
-from sorting import mergesort
-from binary_search import search
+from sorting import merge_sort
+from binary_search import binary_search
 
 
 def check_membership(arr, key):
-    sorted_array = mergesort(arr)
-    result = search(sorted_array, key)
+    sorted_array = merge_sort(arr)
+    result = binary_search(sorted_array, key)
     if result == -1:
         return 0
     else:
