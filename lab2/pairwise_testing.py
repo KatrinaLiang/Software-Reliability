@@ -2,16 +2,10 @@ import random
 
 
 class Pairwise:
-    def __init__(self):
-        self.def_arr_0 = 7
-        self.def_arr_1 = 6
-        self.def_arr_2 = 5
-        self.def_arr_3 = 4
-        self.def_arr_4 = 3
-        self.def_arr_5 = 2
-        self.def_arr_6 = 1
-
-        self.def_arr = [7, 6, 5, 4, 3, 2, 1]
+    def __init__(self, length: int = 7):
+        self.def_arr = []
+        for i in range(length, 0, -1):
+            self.def_arr.append(i)
         self.def_key = 1
 
         self.tests = []  # tests[i] is one test case. tests[i][0] is the array, and tests[i][1] is the key

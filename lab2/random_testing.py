@@ -1,7 +1,7 @@
 import random
 
 
-def generate_array_with_random_numbers(length: int) -> [int]:
+def generate_array_with_random_numbers(length: int = 7) -> [int]:
     arr = []
     for i in range(length):
         arr.append(random.randint(-100, 100))
@@ -12,4 +12,4 @@ def generate_random_key() -> int:
     return random.randint(-200, 200)
 
 
-print(generate_array_with_random_numbers(10))
+# print(generate_array_with_random_numbers(10))
